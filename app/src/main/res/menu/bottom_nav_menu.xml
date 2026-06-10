@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/personasFragment"
+        android:icon="@drawable/ic_people"
+        android:title="Personas"/>
+
+    <item
+        android:id="@+id/tarjetasFragment"
+        android:icon="@drawable/ic_card"
+        android:title="Tarjetas"/>
+    <item
+        android:id="@+id/historialFragment"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Historial" />
+</menu>

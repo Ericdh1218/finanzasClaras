@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finanzasclaras.HomeFragment"
+        android:label="Inicio">
+        <action
+            android:id="@+id/action_home_to_agregarCompra"
+            app:destination="@id/agregarCompraFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/personasFragment"
+        android:name="com.example.finanzasclaras.PersonasFragment"
+        android:label="Personas">
+        <action
+            android:id="@+id/action_personas_to_detalle"
+            app:destination="@id/detallePersonaFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/tarjetasFragment"
+        android:name="com.example.finanzasclaras.TarjetasFragment"
+        android:label="Tarjetas">
+        <action
+            android:id="@+id/action_tarjetas_to_detalle"
+            app:destination="@id/detalleTarjetaFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detallePersonaFragment"
+        android:name="com.example.finanzasclaras.DetallePersonaFragment"
+        android:label="Detalle persona">
+        <argument
+            android:name="personaId"
+            app:argType="string"/>
+        <argument
+            android:name="personaNombre"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_detallePersona_to_agregarCompra"
+            app:destination="@id/agregarCompraFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleTarjetaFragment"
+        android:name="com.example.finanzasclaras.DetalleTarjetaFragment"
+        android:label="Detalle tarjeta">
+        <argument
+            android:name="tarjetaId"
+            app:argType="string"/>
+        <argument
+            android:name="tarjetaNombre"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/agregarCompraFragment"
+        android:name="com.example.finanzasclaras.AgregarCompraFragment"
+        android:label="Nueva compra"/>
+
+    <fragment
+        android:id="@+id/fragment_detalle_tarjeta"
+        android:name="com.example.finanzasclaras.DetalleTarjetaFragment"
+        android:label="Detalle tarjeta">
+        <argument
+            android:name="tarjetaId"
+            app:argType="string"/>
+        <argument
+            android:name="tarjetaNombre"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_detalleTarjeta_to_agregarCompra"
+            app:destination="@id/agregarCompraFragment"/>
+    </fragment>
+
+    <!-- 👇 NUEVA PESTAÑA DE HISTORIAL 👇 -->
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="com.example.finanzasclaras.HistorialFragment"
+        android:label="Historial" />
+
+</navigation>

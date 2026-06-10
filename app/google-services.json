@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577569395403",
+    "project_id": "organizadordepagos-aaa3a",
+    "storage_bucket": "organizadordepagos-aaa3a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577569395403:android:119ce790894fd95bf4414e",
+        "android_client_info": {
+          "package_name": "com.example.finanzasclaras"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEZwxDBuuJzubFltgA4QuXx54K0B4dF-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
